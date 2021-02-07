@@ -4,7 +4,7 @@ using namespace std;
 
 //Sum of all Subarray
 
-/*int sum_subarray(int A[], int n)
+int sum_subarray(int A[], int n)
 {
     int Sum =0,result;
     for(int i=0;i<n;i++)
@@ -20,11 +20,11 @@ using namespace std;
     }
     cout<<endl<<result;
     
-}*/
+}
 
 //Find Max no. up till i
 
-/*maxuptill_i(int A[], int n, int Key)
+maxuptill_i(int A[], int n, int Key)
 {
     int max = INT_MIN;
     for(int i=0; i<=Key;i++)
@@ -35,11 +35,11 @@ using namespace std;
         }   
     }
     cout<<endl<<max;
-}*/
+}
 
 // Finding Largest Arithematic Array
 
-/*arithematic_array(int A[], int n, int key)
+arithematic_array(int A[], int n, int key)
 {
     //An array is said to be arithematic when the consequtive difference is same.
     int ans = 2;
@@ -61,7 +61,7 @@ using namespace std;
     ans = max(ans,current);
     }
     cout<<ans;
-}*/
+}
 
 int Largest_Record(int A[], int n)
 
@@ -77,8 +77,6 @@ than the number of visitors on the following day.
 Note that the very first day could be a record breaking day!
 Please help Isyana find out the number of record breaking days.*/
 {
-    //int A[n+1];
-    //A[n]=-1;
     if (n==1)
     {
         cout<<n;
@@ -107,11 +105,11 @@ int main()
     {
         cin>>A[i];
     }
-    //int key;
-    //cin>>key;
-    //sum_subarray(A,n);
-    //maxuptill_i(A,n,key);
-    //arithematic_array(A,n,key);
+    int key;
+    cin>>key;
+    sum_subarray(A,n);
+    maxuptill_i(A,n,key);
+    arithematic_array(A,n,key);
     Largest_Record(A, n);
     return 0;
 }
